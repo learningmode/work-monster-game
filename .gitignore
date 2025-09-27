@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# Logs and debug files
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build outputs
+/dist/
+/build/

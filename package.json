@@ -1,0 +1,28 @@
+{
+  "name": "work-monster-game",
+  "version": "1.0.0",
+  "description": "for dev setup only and dev packages",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "win-chrome": "start chrome --incognito http://localhost:8080 & live-server --no-browser",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learningmode/work-monster-game.git"
+  },
+  "keywords": [
+    "game",
+    "monstergame"
+  ],
+  "author": "learningmode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/learningmode/work-monster-game/issues"
+  },
+  "homepage": "https://github.com/learningmode/work-monster-game#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
