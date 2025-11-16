@@ -5,6 +5,7 @@ import { SCENE_KEYS } from "./scenes/scene-keys.js";
 const game = new Phaser.Game({
     parent:'game-container',
 });
-
-game.scene.add(PreloadScene.name,PreloadScene);
+// initialize object
+game.scene.add(SCENE_KEYS.PRELOAD_SCENE,PreloadScene);
+// start loading the object
 game.scene.start(SCENE_KEYS.PRELOAD_SCENE);
