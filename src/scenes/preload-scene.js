@@ -18,6 +18,7 @@ export class PreloadScene extends Phaser.Scene {
     }
 
     preload(){
+        console.log(`[${PreloadScene.name}: preload] invoked`);
         const monsterTamerAssetPath ='assets/images/monster-tamer';
         const kennysAssetPath ='assets/images/kenneys-assets';
 
@@ -50,9 +51,9 @@ export class PreloadScene extends Phaser.Scene {
 
     create(){;
         console.log('CREATE');
-        console.log(this.textures.get('BATTLE_BACKGROUND_ASSET_KEYS.FOREST'));
-        // the origin 0,0 by default is the center of the image so setOrigin sets 0,0 to top left and 1,1 bottom right
-        this.add.image(0,0,BATTLE_BACKGROUND_ASSET_KEYS.FOREST).setOrigin(0)
+    console.log(this.textures.get(BATTLE_BACKGROUND_ASSET_KEYS.FOREST));
+        // call first scene
+        this.scene.start(SCENE_KEYS.BATTLE_SCENE);  
     }
 
     update(){
