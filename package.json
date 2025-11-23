@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "live-server",
-    "win-chrome": "start chrome --incognito http://localhost:8080 & live-server --no-browser",
+    "win-chrome": "start chrome --incognito --auto-open-devtools-for-tabs=false http://localhost:8080 & live-server --no-browser",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
